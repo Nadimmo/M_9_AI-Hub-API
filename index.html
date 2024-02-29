@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .createDiv{
+            width: 340px;
+            border: 1px solid black;
+            margin: 15px;
+            padding: 15px;
+            box-shadow: 5px 5px #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl text-center">AI Universe Hub</h1> <br><br>
+        <div  class="ml-[420px]">
+            <input id="inputText" type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs" />
+            <button onclick="Search()" class="btn btn-info">Search</button>
+        </div>
+    </header>
+    <main class="mt-10">
+        <section>
+            <div>
+                <div id="currentDiv" class="card card-compact  bg-base-100 shadow-xl grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+                    
+                </div>
+            </div> 
+            <br><br>
+            <div>
+                <!-- Open the modal using ID.showModal() method -->
+                <!-- <button class="btn" onclick="my_modal_4.showModal()">open modal</button> -->
+                <dialog id="my_modal_4" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                        <div id="newModal">
+
+                        </div>                    
+                    <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                    </div>
+                </div>
+                </dialog>
+            </div>
+               
+            <br><br>
+            <div  class="ml-[500px]">
+                <button onclick="ShowAll()" class="btn btn-info">showAll</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
